@@ -1,0 +1,151 @@
+{
+  "_comment": "Ground truth for Vrukshaa January 2026 reconciliation. Carnatic=$40, Yoga=$40, Both=$80 per student per month.",
+
+  "billing_period": "2026-01-01",
+
+  "charges": [
+    { "id_label": "CHG001", "student_key": "STU001", "program": "Carnatic", "amount": "40.00", "family_key": "FAM001" },
+    { "id_label": "CHG002", "student_key": "STU002", "program": "Carnatic", "amount": "40.00", "family_key": "FAM002" },
+    { "id_label": "CHG003", "student_key": "STU003", "program": "Yoga",     "amount": "40.00", "family_key": "FAM002" },
+    { "id_label": "CHG004", "student_key": "STU004", "program": "Carnatic", "amount": "40.00", "family_key": "FAM003" },
+    { "id_label": "CHG005", "student_key": "STU004", "program": "Yoga",     "amount": "40.00", "family_key": "FAM003" },
+    { "id_label": "CHG006", "student_key": "STU005", "program": "Carnatic", "amount": "40.00", "family_key": "FAM004" },
+    { "id_label": "CHG007", "student_key": "STU006", "program": "Yoga",     "amount": "40.00", "family_key": "FAM005" },
+    { "id_label": "CHG008", "student_key": "STU007", "program": "Yoga",     "amount": "40.00", "family_key": "FAM006" },
+    { "id_label": "CHG009", "student_key": "STU008", "program": "Carnatic", "amount": "40.00", "family_key": "FAM006" },
+    { "id_label": "CHG010", "student_key": "STU009", "program": "Carnatic", "amount": "40.00", "family_key": "FAM007" },
+    { "id_label": "CHG011", "student_key": "STU010", "program": "Yoga",     "amount": "40.00", "family_key": "FAM008" },
+    { "id_label": "CHG012", "student_key": "STU011", "program": "Carnatic", "amount": "40.00", "family_key": "FAM009" },
+    { "id_label": "CHG013", "student_key": "STU012", "program": "Yoga",     "amount": "40.00", "family_key": "FAM010" }
+  ],
+
+  "transactions": [
+    {
+      "external_id": "PP-JAN001",
+      "source": "paypal",
+      "family_key": "FAM001",
+      "amount": "40.00",
+      "match_difficulty": "easy",
+      "note": "Robert Smith pays $40 for Alice Carnatic. Name matches guardian exactly."
+    },
+    {
+      "external_id": "PP-JAN002",
+      "source": "paypal",
+      "family_key": "FAM002",
+      "amount": "80.00",
+      "match_difficulty": "medium",
+      "note": "Payer is 'Raj Patel' but primary guardian is 'Priya Patel'. Name differs; memo 'Arjun Carnatic + Meera Yoga' clarifies. $80 = $40 Carnatic + $40 Yoga."
+    },
+    {
+      "external_id": "PP-JAN003",
+      "source": "paypal",
+      "family_key": "FAM004",
+      "amount": "40.00",
+      "match_difficulty": "easy",
+      "note": "Wei Chen pays $40 for Sophie Carnatic. Name and amount match."
+    },
+    {
+      "external_id": "PP-JAN004",
+      "source": "paypal",
+      "family_key": "FAM005",
+      "amount": "30.00",
+      "match_difficulty": "hard",
+      "note": "Payer is 'Ana Garcia', guardian is 'Miguel Garcia'. Partial payment of $30 against $40 Yoga charge."
+    },
+    {
+      "external_id": "PP-JAN005",
+      "source": "paypal",
+      "family_key": "FAM006",
+      "amount": "80.00",
+      "match_difficulty": "easy",
+      "note": "Ji-ho Kim pays $80 for Yuna Yoga ($40) + Minho Carnatic ($40)."
+    },
+    {
+      "external_id": "PP-JAN006",
+      "source": "paypal",
+      "family_key": "FAM007",
+      "amount": "40.00",
+      "match_difficulty": "easy",
+      "note": "Sarah Williams pays $40 for Noah Carnatic. Exact match."
+    },
+    {
+      "external_id": "PP-JAN007",
+      "source": "paypal",
+      "family_key": "FAM008",
+      "amount": "40.00",
+      "match_difficulty": "easy",
+      "note": "Thanh Nguyen pays $40 for Kevin Yoga. Memo says 'Kevin yoga Jan 2026'."
+    },
+    {
+      "external_id": "PP-JAN008",
+      "source": "paypal",
+      "family_key": "FAM009",
+      "amount": "40.00",
+      "match_difficulty": "easy",
+      "note": "Chidi Okafor pays $40 for Amara Carnatic. DUPLICATE ROW in CSV - idempotent import must ignore the second."
+    },
+    {
+      "external_id": "PP-JAN009",
+      "source": "paypal",
+      "family_key": null,
+      "amount": "40.00",
+      "match_difficulty": "unresolvable",
+      "note": "Unknown sender. Agent should flag as unmatched - do NOT allocate."
+    },
+    {
+      "external_id": "PP-JAN010",
+      "source": "paypal",
+      "family_key": "FAM003",
+      "amount": "80.00",
+      "match_difficulty": "medium",
+      "note": "Karen Johnson pays $80 = $40 Carnatic + $40 Yoga for Ethan. Also appears as bank row BNK-JAN003 - bank row is the duplicate."
+    },
+    {
+      "external_id": "BNK-JAN001",
+      "source": "bank",
+      "family_key": "FAM010",
+      "amount": "40.00",
+      "match_difficulty": "medium",
+      "note": "Bank description 'MARTINEZ ELENA VRUKSHAA'. Matches FAM010 Yoga charge exactly. No PayPal for this family."
+    },
+    {
+      "external_id": "BNK-JAN002",
+      "source": "bank",
+      "family_key": "FAM005",
+      "amount": "10.00",
+      "match_difficulty": "hard",
+      "note": "Garcia family paid $30 via PayPal (PP-JAN004) + $10 via bank. Together = $40 = full Yoga charge."
+    },
+    {
+      "external_id": "BNK-JAN003",
+      "source": "bank",
+      "family_key": "FAM003",
+      "amount": "80.00",
+      "match_difficulty": "hard",
+      "note": "Karen Johnson also paid via bank, same $80. PP-JAN010 is the real payment. Agent must detect cross-channel duplicate and NOT allocate this row."
+    }
+  ],
+
+  "expected_allocations": [
+    { "txn_id": "PP-JAN001", "charge_id_label": "CHG001", "amount": "40.00" },
+    { "txn_id": "PP-JAN002", "charge_id_label": "CHG002", "amount": "40.00" },
+    { "txn_id": "PP-JAN002", "charge_id_label": "CHG003", "amount": "40.00" },
+    { "txn_id": "PP-JAN003", "charge_id_label": "CHG006", "amount": "40.00" },
+    { "txn_id": "PP-JAN004", "charge_id_label": "CHG007", "amount": "30.00" },
+    { "txn_id": "BNK-JAN002", "charge_id_label": "CHG007", "amount": "10.00" },
+    { "txn_id": "PP-JAN005", "charge_id_label": "CHG008", "amount": "40.00" },
+    { "txn_id": "PP-JAN005", "charge_id_label": "CHG009", "amount": "40.00" },
+    { "txn_id": "PP-JAN006", "charge_id_label": "CHG010", "amount": "40.00" },
+    { "txn_id": "PP-JAN007", "charge_id_label": "CHG011", "amount": "40.00" },
+    { "txn_id": "PP-JAN008", "charge_id_label": "CHG012", "amount": "40.00" },
+    { "txn_id": "PP-JAN010", "charge_id_label": "CHG004", "amount": "40.00" },
+    { "txn_id": "PP-JAN010", "charge_id_label": "CHG005", "amount": "40.00" },
+    { "txn_id": "BNK-JAN001", "charge_id_label": "CHG013", "amount": "40.00" }
+  ],
+
+  "expected_unmatched_transactions": ["PP-JAN009"],
+  "expected_unmatched_charges": [],
+  "expected_partial_charges": ["CHG007"],
+
+  "expected_duplicate_skips": ["PP-JAN008 (second CSV row)", "BNK-JAN003 (cross-channel duplicate of PP-JAN010)"]
+}

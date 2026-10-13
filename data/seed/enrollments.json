@@ -1,0 +1,81 @@
+[
+  {
+    "_comment": "Vrukshaa school: Carnatic = $40/mo, Yoga = $40/mo, Both = $80/mo per student.",
+    "student_key": "STU001",
+    "program": "Carnatic",
+    "monthly_fee": "40.00",
+    "start_date": "2025-09-01"
+  },
+  {
+    "student_key": "STU002",
+    "program": "Carnatic",
+    "monthly_fee": "40.00",
+    "start_date": "2025-09-01"
+  },
+  {
+    "student_key": "STU003",
+    "program": "Yoga",
+    "monthly_fee": "40.00",
+    "start_date": "2025-11-01"
+  },
+  {
+    "student_key": "STU004",
+    "program": "Carnatic",
+    "monthly_fee": "40.00",
+    "start_date": "2025-09-01"
+  },
+  {
+    "student_key": "STU004",
+    "program": "Yoga",
+    "monthly_fee": "40.00",
+    "start_date": "2025-10-01"
+  },
+  {
+    "student_key": "STU005",
+    "program": "Carnatic",
+    "monthly_fee": "40.00",
+    "start_date": "2025-09-01"
+  },
+  {
+    "student_key": "STU006",
+    "program": "Yoga",
+    "monthly_fee": "40.00",
+    "start_date": "2025-09-01"
+  },
+  {
+    "student_key": "STU007",
+    "program": "Yoga",
+    "monthly_fee": "40.00",
+    "start_date": "2025-09-01"
+  },
+  {
+    "student_key": "STU008",
+    "program": "Carnatic",
+    "monthly_fee": "40.00",
+    "start_date": "2025-09-01"
+  },
+  {
+    "student_key": "STU009",
+    "program": "Carnatic",
+    "monthly_fee": "40.00",
+    "start_date": "2025-09-01"
+  },
+  {
+    "student_key": "STU010",
+    "program": "Yoga",
+    "monthly_fee": "40.00",
+    "start_date": "2025-09-01"
+  },
+  {
+    "student_key": "STU011",
+    "program": "Carnatic",
+    "monthly_fee": "40.00",
+    "start_date": "2025-09-01"
+  },
+  {
+    "student_key": "STU012",
+    "program": "Yoga",
+    "monthly_fee": "40.00",
+    "start_date": "2025-09-01"
+  }
+]

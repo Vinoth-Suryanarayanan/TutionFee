@@ -1,0 +1,22 @@
+# Postgres 16 running in Docker — the only infrastructure Step 2 adds.
+# "docker compose up -d" starts it; "docker compose down -v" wipes the data.
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: tuition-db
+    environment:
+      POSTGRES_USER: tuition
+      POSTGRES_PASSWORD: tuition
+      POSTGRES_DB: tuition
+    ports:
+      - "5432:5432"        # host:container — reach it as localhost:5432
+    volumes:
+      - tuition-db:/var/lib/postgresql/data   # data survives container restarts
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tuition -d tuition"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  tuition-db:   # named volume, managed by Docker, not a folder on your Mac

@@ -1,0 +1,193 @@
+[
+  {
+    "external_key": "FAM001",
+    "display_name": "Smith Family",
+    "guardians": [
+      {
+        "full_name": "Robert Smith",
+        "email": "robert.smith@gmail.com",
+        "phone": "408-555-0101",
+        "relation_to_student": "father",
+        "is_primary": true,
+        "preferred_channel": "email",
+        "paypal_name": "Robert Smith"
+      }
+    ],
+    "students": [
+      { "external_key": "STU001", "first_name": "Alice", "last_name": "Smith" }
+    ]
+  },
+  {
+    "external_key": "FAM002",
+    "display_name": "Patel Family",
+    "guardians": [
+      {
+        "full_name": "Priya Patel",
+        "email": "priya.patel@yahoo.com",
+        "phone": "408-555-0202",
+        "relation_to_student": "mother",
+        "is_primary": true,
+        "preferred_channel": "email",
+        "paypal_name": "Raj Patel"
+      }
+    ],
+    "students": [
+      { "external_key": "STU002", "first_name": "Arjun", "last_name": "Patel" },
+      { "external_key": "STU003", "first_name": "Meera", "last_name": "Patel" }
+    ]
+  },
+  {
+    "external_key": "FAM003",
+    "display_name": "Johnson Family",
+    "guardians": [
+      {
+        "full_name": "Karen Johnson",
+        "email": "karen.j@gmail.com",
+        "phone": "650-555-0303",
+        "relation_to_student": "mother",
+        "is_primary": true,
+        "preferred_channel": "sms",
+        "paypal_name": "Karen Johnson"
+      }
+    ],
+    "students": [
+      { "external_key": "STU004", "first_name": "Ethan", "last_name": "Johnson" }
+    ]
+  },
+  {
+    "external_key": "FAM004",
+    "display_name": "Chen Family",
+    "guardians": [
+      {
+        "full_name": "Wei Chen",
+        "email": "wei.chen@hotmail.com",
+        "phone": "669-555-0404",
+        "relation_to_student": "father",
+        "is_primary": true,
+        "preferred_channel": "email",
+        "paypal_name": "Wei Chen"
+      },
+      {
+        "full_name": "Ling Chen",
+        "email": "ling.chen@hotmail.com",
+        "phone": "669-555-0405",
+        "relation_to_student": "mother",
+        "is_primary": false,
+        "preferred_channel": "email",
+        "paypal_name": null
+      }
+    ],
+    "students": [
+      { "external_key": "STU005", "first_name": "Sophie", "last_name": "Chen" }
+    ]
+  },
+  {
+    "external_key": "FAM005",
+    "display_name": "Garcia Family",
+    "guardians": [
+      {
+        "full_name": "Miguel Garcia",
+        "email": "miguel.garcia@gmail.com",
+        "phone": "408-555-0505",
+        "relation_to_student": "father",
+        "is_primary": true,
+        "preferred_channel": "sms",
+        "paypal_name": "Ana Garcia"
+      }
+    ],
+    "students": [
+      { "external_key": "STU006", "first_name": "Lucia", "last_name": "Garcia" }
+    ]
+  },
+  {
+    "external_key": "FAM006",
+    "display_name": "Kim Family",
+    "guardians": [
+      {
+        "full_name": "Ji-ho Kim",
+        "email": "jiho.kim@gmail.com",
+        "phone": "408-555-0606",
+        "relation_to_student": "father",
+        "is_primary": true,
+        "preferred_channel": "email",
+        "paypal_name": "Ji-ho Kim"
+      }
+    ],
+    "students": [
+      { "external_key": "STU007", "first_name": "Yuna", "last_name": "Kim" },
+      { "external_key": "STU008", "first_name": "Minho", "last_name": "Kim" }
+    ]
+  },
+  {
+    "external_key": "FAM007",
+    "display_name": "Williams Family",
+    "guardians": [
+      {
+        "full_name": "Sarah Williams",
+        "email": "sarah.w@icloud.com",
+        "phone": "510-555-0707",
+        "relation_to_student": "mother",
+        "is_primary": true,
+        "preferred_channel": "email",
+        "paypal_name": "Sarah Williams"
+      }
+    ],
+    "students": [
+      { "external_key": "STU009", "first_name": "Noah", "last_name": "Williams" }
+    ]
+  },
+  {
+    "external_key": "FAM008",
+    "display_name": "Nguyen Family",
+    "guardians": [
+      {
+        "full_name": "Thanh Nguyen",
+        "email": "thanh.nguyen@gmail.com",
+        "phone": "408-555-0808",
+        "relation_to_student": "mother",
+        "is_primary": true,
+        "preferred_channel": "email",
+        "paypal_name": "Thanh Nguyen"
+      }
+    ],
+    "students": [
+      { "external_key": "STU010", "first_name": "Kevin", "last_name": "Nguyen" }
+    ]
+  },
+  {
+    "external_key": "FAM009",
+    "display_name": "Okafor Family",
+    "guardians": [
+      {
+        "full_name": "Chidi Okafor",
+        "email": "chidi.okafor@gmail.com",
+        "phone": "650-555-0909",
+        "relation_to_student": "father",
+        "is_primary": true,
+        "preferred_channel": "email",
+        "paypal_name": "Chidi Okafor"
+      }
+    ],
+    "students": [
+      { "external_key": "STU011", "first_name": "Amara", "last_name": "Okafor" }
+    ]
+  },
+  {
+    "external_key": "FAM010",
+    "display_name": "Martinez Family",
+    "guardians": [
+      {
+        "full_name": "Elena Martinez",
+        "email": "elena.m@gmail.com",
+        "phone": "408-555-1010",
+        "relation_to_student": "mother",
+        "is_primary": true,
+        "preferred_channel": "sms",
+        "paypal_name": "Elena Martinez"
+      }
+    ],
+    "students": [
+      { "external_key": "STU012", "first_name": "Carlos", "last_name": "Martinez" }
+    ]
+  }
+]

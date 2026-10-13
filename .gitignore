@@ -1,0 +1,22 @@
+# --- Privacy: never commit real family or payment data ---
+.env
+data/private/*
+!data/private/README.md
+*.db
+*.sqlite
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+dist/
+build/
+*.egg-info/
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
